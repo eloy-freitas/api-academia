@@ -1,0 +1,15 @@
+exercicio(id,nome)
+exercicios(id, fk_id_exercicios)
+pacote(id, nome, id_cor, fk_id_exercicios)
+carteirinha(id, fk_id_aluno, fk_id_pacotes)
+cor-> enum(id, cor)
+listaExerciciosAluno(id, fk_id_aluno, fk_id_exercicios)
+pessoa(id, nome, cpf, endereco, telefone, dataNascimento, pathFoto)
+aluno(pessoa, matricula, responsável, pacotes, mensalidade)
+professor(pessoa, matricula, formacao)
+endereco(id, logradouro, complemento, cep)
+/*promocao(id, regra, codigosPromocionais)
+codigosPromocionais-> enum(id, codigo)*/
+
+
+
